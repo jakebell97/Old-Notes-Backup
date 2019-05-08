@@ -1,0 +1,28 @@
+// Chapter 2 Extra Credit 1
+// Functions with multiple outputs
+
+#include <iostream>
+using namespace std;
+
+void convertms(int, int, int &, int &)
+
+int main ()
+{
+    int days, hours, min, sec;
+    cout << "In Days and Hours, how long since the last time you took a shit?" << endl;
+    cout << "Days: ";
+    cin >> days;
+    cout << endl << "Hours: ";
+    cin >> hours;
+    convertms(days, hours, min, sec);
+    cout << endl << days << " Days and " << hours << " Hours since your last dump \n"
+        << "is equal to " << min << "Minutes, or " << sec << "Seconds. \n";
+    return 0;
+}
+
+void convertms(int d, int h, int &m, int &s)
+{
+    h = h + d * 24;
+    m = h * 60;
+    s = m * 60;
+}

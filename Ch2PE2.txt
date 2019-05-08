@@ -1,0 +1,15 @@
+//Chapter 2 Programing Excercise 2
+//Program that asks for distance in furlongs and converts it to yards (1 furlong = 220 yards)
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int fur, yards;
+    cout << "Enter distance in Furlongs." << endl;
+    cin >> fur;
+    yards = fur * 220;
+    cout << fur << "Furlongs = " << yards << " Yards" << endl;
+    return 0;
+}

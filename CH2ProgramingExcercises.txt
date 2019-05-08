@@ -1,0 +1,17 @@
+//C++ Primer Plus Practice
+//Chapter 2 Programming Exercises
+/* 1. Write program that displays name and address
+   2. Program that asks for distance in furlongs and converts it to yards (1 furlong = 220 yards)
+   3. Write a program that uses three user-defined functions (including main) and produces the following output:
+        three blind mice     }one function called twice
+        three blind mice     }
+        see how they run     }second function called twice
+        see how they run     }
+   4. Program asks for user age, program displays the age in monts.
+   5. call a user-defined function that takes user input temperature in celsius and returns fahrenheit. (F = 1.8 * C + 32)
+   6. User-defined function that takes a user input distance in light years and returns distance in astronomical units (1 light year = 63240 astro units)
+   7. user enters hour and minute value, void function that displays as h:mn format
+   */
+//DONE!
+/*Extra credit practices
+    1. Functions with multiple outputs

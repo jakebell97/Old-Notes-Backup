@@ -1,0 +1,23 @@
+//Chapter 5 Programming Excercise 3
+/*  Write a program that asks the user to type in numbers. After each entry, the
+    program should report the cumulative sum of the entries to date. The program should
+    terminate when the user enters 0.   */
+    
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int sum = 0, x;
+    cout << "This program finds the sum of numbers entered by the user." << endl;
+    cout << "----------------------------------------------------------" << endl << endl;
+    do
+    {
+        cout << "Enter a number:";
+        cin >> x;
+        sum = sum + x;
+        cout << "Sum: " << sum << endl << endl;
+    }while(x != 0);
+    cout << "Goodbye." << endl;
+    return 0;
+}

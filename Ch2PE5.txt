@@ -1,0 +1,24 @@
+//Chapter 2 Programing Excercise 5
+//call a user-defined function that takes user input temperature in celsius and returns fahrenheit. (F = 1.8 * C + 32)
+
+#include <iostream>
+using namespace std;
+
+double tempconv(double);
+
+int main ()
+{
+    double temp, newtemp;
+    cout << "Enter temperature in Celsius:" << endl;
+    cin >> temp;
+    newtemp = tempconv(temp);
+    cout << temp << " C = " << newtemp << "F" << endl;
+    return 0;
+}
+
+double tempconv(double C)
+{
+    double F;
+    F = 1.8 * C + 32;
+    return (F);
+}

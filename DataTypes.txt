@@ -1,0 +1,33 @@
+//Data Types
+//Will discuss data types in iostream and string
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int a, b, c;       //int- intiger: whole numbers, no decimal bullshite
+	float afloat;    //float- floating numbers: can do decimils up to 6 decimal places
+	char achar, bchar;     //char- character: contain a single character, surrounded by single quotes ''
+	bool isA, isB;    //bool- boolean: true (1), or false (0) unit, usually starts with is, ex: isVariable
+	double adouble, bdouble;   //double- double: big numbers, up to 15 decimals
+    string Astring;   //string- string: an array of characters and numbers
+   
+    a = 1;    //ints are basic numbers 
+    b = 2;
+    c = 3;
+    
+    afloat = 1.5;    //floats are smaller floating point numbers
+    
+    achar = 'a';    //chars are single characters, can also be numbers
+    bchar = '4';
+    
+    isA = true;     //bools can either be true or false, usually assigned value with declaration.
+    isB = false;
+    
+    adouble = 1.23456; //double is bigger float, large numbers, or numbers with many decimals
+    bdouble = 12345678;
+    
+    Astring = "A big old string right here for ya."; //strings are large arrays of characters with different properties than arrays.
+    return 0;
+}

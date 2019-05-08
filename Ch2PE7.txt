@@ -1,0 +1,24 @@
+//Chapter 2 Programing Excercise 7
+//User enters hour and minute value, void function that displays as h:mn format
+
+#include <iostream>
+using namespace std;
+
+void timefix(int, int);
+
+int main ()
+{
+    int hour, min;
+    cout << "What hour is it?" << endl;
+    cin >> hour;
+    cour << "How many minutes?" << endl;
+    cin >> min;
+    cout << "Oh, it's ";
+    timefix(hour, min);
+    return 0;
+}
+
+void timefix(int h, int m)
+{
+    cout << h << ":" << m << endl;
+}

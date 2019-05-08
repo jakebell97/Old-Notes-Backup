@@ -1,0 +1,50 @@
+//Chapter 4 Programming Excercise 1
+/*Write a C++ program that requests and displays information as shown in the
+  following example of output:
+      What is your first name? Betty Sue
+      What is your last name? Yewe
+      What letter grade do you deserve? B
+      What is your age? 22
+      Name: Yewe, Betty Sue
+      Grade: C
+      Age: 22
+      
+  Note that the proram should be able to accept first names that comprise more
+  than one word. Also note that the program adjusts the grade downward--that is, up
+  one letter. (two letters in the case of a D, no letters in the case of an F).
+  
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    const int size = 16;
+    char fname[size], lname[size];
+    char grade;
+    int age;
+    cout << "What is your first name?";
+    cin.getline(fname, size);
+    cout << endl << "What is your last name?";
+    cin.getline(lname, size);
+    cout << endl << "What letter grade do you deserve?";
+    cin >> grade;
+    cout << endl << "What is your age?";
+    cin >> age;
+    if (grade == 'D' || grade == 'd')
+    {
+        grade = grade + 2;
+    }
+    else if (grade == 'F' || grade == 'f')
+    {
+        grade = grade;
+    }
+    else
+    {
+        grade = grade++;
+    }
+    cout << "Name: " << lname << ", " << fname << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Age: " << age << endl;
+    return 0;
+}

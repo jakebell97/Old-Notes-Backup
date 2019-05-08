@@ -1,0 +1,4 @@
+//Chapter 5 Programming Excercise 2
+/*  Redo Listing 5.4 using a type array object instead of a built-in array and type
+    long double instead of long long. Find the value of 100!    */
+    

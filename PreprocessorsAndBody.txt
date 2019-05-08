@@ -1,0 +1,30 @@
+//Preprocessors and Body 
+//Things that every program needs
+
+//First, our libraries
+#include <iostream> //our number one, lets us use things like cout, cin, endl, basic arithmetic, etc...
+
+#include <cmath> //more complicated mathematical functions such as trig and powers
+
+#include <fstream> //allows for the use of file streams
+
+#include <string> //strings
+
+#include <iomanip> //allows for formatting such as setw()
+
+#include <vector> //still need to learn from youtube c++ video
+//if you want to use standard library, which is all we really know about rn, need:
+using namespace std;
+
+//any functions/structures/classes/whatever isn't main would need to be declared or written before main
+void funct(int n)
+{
+    cout << "This is a function before main.";
+}
+
+//main body of the program, where the program starts and ends
+int main()
+{
+    //statements;
+    return 0;    //returns 0 to main, ends program.
+}

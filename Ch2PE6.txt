@@ -1,0 +1,25 @@
+//Chapter 2 Programing Excercise 6
+//User-defined function that takes a user input distance in light years and returns distance in astronomical units (1 light year = 63240 astro units)
+
+#include <iostream>
+using namespace std;
+
+double astroconvert(int);
+
+int main()
+{
+    int lyears;
+    double astros;
+    cout << "Enter a distance in Light Years:" << endl;
+    cin >> lyears;
+    astros = astroconvert(lyears);
+    cout << lyears << " Light Years = " << astros << " Astronomical Units" << endl;
+    return 0;
+}
+
+double astroconvert(int c)
+{
+    double x;
+    x = c * 63240;
+    return (x);
+}

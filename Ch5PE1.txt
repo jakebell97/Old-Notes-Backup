@@ -1,0 +1,30 @@
+//Chapter 5 Programming Excercise 1
+/*  Write a program that requests the user to enter two integers. The program should
+    then calculate and report the sum of all the integers between and including the two
+    integers. At this point, assume that the smaller integer is entered first.    */
+    
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a, b, temp, sum = 0;
+	cout << "This program will calculate the sum of all whole numbers between two integers." << endl;
+	cout << "------------------------------------------------------------------------------" << endl << endl;
+	cout << "Enter first integer:";
+	cin >> a;
+	cout << "Enter second integer:";
+	cin >> b;
+	if (a>b)
+	{
+		temp = a;
+		a = b;
+		b = temp;
+	}
+	for (int i = 0; i < b; i++)
+	{
+		sum = sum + a + i;
+	}
+	cout << "The sum of numbers from " << a << " to " << b << " is " << sum << endl;
+	return 0;
+}

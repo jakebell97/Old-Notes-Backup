@@ -1,0 +1,22 @@
+//iostream
+//number one library
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    
+    //cout displays things to the screen.
+    cout << "Whatever is in these quotes shows on the window.";
+    //c++ needs you to tell it when to go to the next line with either endl, or "\n"
+    cout << endl << "endl creates a new line." << endl;
+    cout << "But \ and n do the same thing. \n";
+    
+    //cin allows the user to input information to the screen.
+    cout << "Enter a value for int a using the cin object: ";
+    cin >> a;      //program waits for user to enter an int.
+    cout << "Now we can display whatever the user entered like this: " << a << endl;
+    return 0;
+}
